@@ -113,7 +113,8 @@
 			
 			textarea {
 			    width: 100%;
-			    height: 150px;
+			    margin-top: 5px;
+			    height: 100px;
 			    line-height: 150%;
 			    resize:vertical;
 			}
@@ -211,14 +212,18 @@
 						</nav><br><br>
 						<div id="contact" class="text-center center-block" style="display:none;">
 							<form class="form" id="contact_form" action="//formspree.io/ImMario_@outlook.com" method="POST" enctype="multipart/form-data">
+								<div style="width:1230px; overflow: hidden;">
+								<div style="width:610px;margin-right:5px; float:left;">
 								<p class="name">
 							        	<input name="nombre" type="text" class="feedback-input" placeholder="Nombre" id="name" />
 							        </p>
-							      
+							      </div>
+							      <div style="width:610px;margin-left:5px; overflow:hidden;">
 							      <p class="email">
 							        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" />
 							      </p>
-							      
+							      </div>
+							      </div>
 							      <p class="text">
 							        <textarea name="mensaje" class="feedback-input" id="comment" placeholder="Mensaje"></textarea>
 							      </p>
