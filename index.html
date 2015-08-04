@@ -16,6 +16,23 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body class="loading">
+		<style>
+			*::-webkit-input-placeholder {
+    				color: black;
+			}
+			*:-moz-placeholder {
+			   /* FF 4-18 */
+				color: black;
+			}
+			*::-moz-placeholder {
+			    /* FF 19+ */
+			    color: black;
+			}
+			*:-ms-input-placeholder {
+			    /* IE 10+ */
+			    color: black;
+			}
+		</style>
 		<div id="wrapper">
 			<div id="bg"></div>
 			<div id="overlay"></div>
@@ -35,24 +52,24 @@
 						</nav><br><br>
 						<div id="contact" class="text-center center-block" style="background: transparent; display:none;">
 							<form id="contact_form" action="//formspree.io/ImMario_@outlook.com" method="POST" enctype="multipart/form-data">
-								<div style="color:black;margin-top: 0.5em;" class="row">
-									<input style="background:rgba(61, 179, 92, 0.4)" id="name" class="form-control input" name="name" type="text" value="" size="30" placeholder="Nombre" /><br />
+								<div style="width: 3.5em;color:black;margin-top: 0.5em;" class="row">
+									<input style="background:rgba(61, 179, 92, 0.2)" id="name" class="form-control input" name="name" type="text" value="" size="30" placeholder="Nombre" /><br />
+								</div>
+								<div style="width: 5em;color:black;margin-top: 0.5em;" class="row">
+									<input style="background:rgba(61, 179, 92, 0.2)" id="email" class="form-control input" name="email" type="text" value="" size="30" placeholder="Email"/><br />
 								</div>
 								<div style="color:black;margin-top: 0.5em;" class="row">
-									<input style="background:rgba(61, 179, 92, 0.4)" id="email" class="form-control input" name="email" type="text" value="" size="30" placeholder="Email"/><br />
-								</div>
-								<div style="color:black;margin-top: 0.5em;" class="row">
-									<textarea style="background:rgba(255, 255, 255, 0.4)" id="message" class="form-control input" name="message" rows="7" cols="30" placeholder="Mensaje"></textarea><br />
+									<textarea style="background:rgba(61, 179, 92, 0.2)" id="message" class="form-control input" name="message" rows="5" cols="20" placeholder="Mensaje"></textarea><br />
 								</div>
     								<div class="text-center center-block">
-	    								<input style="margin-top: 2em;" class="icon" id="submit_button" type="submit" value="Mandar" />
+	    								<input style="margin-top: 0.3em;" class="icon" id="submit_button" type="submit" value="Mandar" />
     								</div>
     							</form>	
 						</div>
 					</header>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer style="color:white;" id="footer">
 						<span class="copyright">&copy; Mario. Design: <a href="http://html5up.net">HTML5 UP</a> (Aerial).</span>
 					</footer>
 
