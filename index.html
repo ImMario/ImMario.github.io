@@ -6,11 +6,12 @@
 -->
 <html>
 	<head>
-		<title>Aerial by HTML5 UP</title>
+		<title>Mario</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
@@ -26,23 +27,50 @@
 						<p>Tecnología &nbsp;&bull;&nbsp; Fotografía &nbsp;&bull;&nbsp; Aviación</p>
 						<nav>
 							<ul>
-								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								<li><a href="https://twitter.com/_ImMario_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="http://500px.com/MarioPhotos" class="icon fa-camera"><span class="label">500px</span></a></li>
+								<li><a href="https://github.com/ImMario" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a id="trigger" href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 							</ul>
-						</nav>
+						</nav><br><br>
+						<div id="contact" class="text-center center-block" style="background: transparent; display:none;">
+							<form id="contact_form" action="//formspree.io/ImMario_@outlook.com" method="POST" enctype="multipart/form-data">
+								<div style="color:black;margin-top: 0.5em;" class="row">
+									<input style="background:rgba(61, 179, 92, 0.4)" id="name" class="form-control input" name="name" type="text" value="" size="30" placeholder="Nombre" /><br />
+								</div>
+								<div style="color:black;margin-top: 0.5em;" class="row">
+									<input style="background:rgba(61, 179, 92, 0.4)" id="email" class="form-control input" name="email" type="text" value="" size="30" placeholder="Email"/><br />
+								</div>
+								<div style="color:black;margin-top: 0.5em;" class="row">
+									<textarea style="background:rgba(255, 255, 255, 0.4)" id="message" class="form-control input" name="message" rows="7" cols="30" placeholder="Mensaje"></textarea><br />
+								</div>
+    								<div class="text-center center-block">
+	    								<input style="margin-top: 2em;" class="icon" id="submit_button" type="submit" value="Mandar" />
+    								</div>
+    							</form>	
+						</div>
 					</header>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+						<span class="copyright">&copy; Mario. Design: <a href="http://html5up.net">HTML5 UP</a> (Aerial).</span>
 					</footer>
 
 			</div>
 		</div>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			var contacttrigger = document.getElementById('trigger');
+			
+			contacttrigger.onclick = function() {
+				var contactdiv = document.getElementById('contact');
+				if(contactdiv.style.display !== 'none') {
+					contactdiv.style.display = 'none';
+				}else {
+					contactdiv.style.display = 'block';
+				}
+			};
+		</script>
 		<script>
 			window.onload = function() { document.body.className = ''; }
 			window.ontouchmove = function() { return false; }
