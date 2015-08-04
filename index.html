@@ -246,13 +246,16 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script>
 			var contacttrigger = document.getElementById('trigger');
+			var copy = document.getElementById('footer');
 			
 			contacttrigger.onclick = function() {
 				var contactdiv = document.getElementById('contact');
 				if(contactdiv.style.display !== 'none') {
 					contactdiv.style.display = 'none';
+					copy.style.height = '6em';
 				}else {
 					contactdiv.style.display = 'block';
+					copy.style.height = '1em';
 				}
 			};
 		</script>
